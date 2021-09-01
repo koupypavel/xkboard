@@ -1,0 +1,26 @@
+<Project ModBy="Analyzer" Name="C:/lscc/diamond/3.12/examples/Reveal_debugger/counter_reveal_MACHXO3D/blinky/rev_test.rvs" Date="2021-07-05">
+ <Core Name="tutorial_led_blink_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="256" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Sig Name="i_switch_s1"/>
+    <Sig Name="i_switch_s2"/>
+    <Sig Name="r_toggle_1hz"/>
+    <Sig Name="r_toggle_10hz"/>
+    <Sig Name="r_toggle_20hz"/>
+    <Sig Name="r_toggle_5hz"/>
+    <Sig Name="o_led_d1"/>
+    <Sig Name="o_led_d2"/>
+    <Sig Name="o_led_d3"/>
+   </Trace>
+   <Trigger>
+    <TU Operator="6" Name="TU1" ID="1" Value="1" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

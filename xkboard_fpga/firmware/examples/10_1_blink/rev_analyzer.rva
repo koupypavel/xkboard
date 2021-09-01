@@ -1,0 +1,46 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>po 5. ?vc 11:59:15 2021</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="0"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LCMXO3D-9400HC</DeviceName>
+  <DeviceID>0x212E3043</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>rev_test.rvl</RVLFileName>
+  <RVSFileName>rev_test.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="i_switch_s1" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="i_switch_s2" NodeType="0" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="r_toggle_1hz" NodeType="0" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="r_toggle_10hz" NodeType="0" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="r_toggle_20hz" NodeType="0" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="r_toggle_5hz" NodeType="0" PortIndex="5"/>
+    <TraceSignal IsHidden="false" Name="o_led_d1" NodeType="0" PortIndex="6"/>
+    <TraceSignal IsHidden="false" Name="o_led_d2" NodeType="0" PortIndex="7"/>
+    <TraceSignal IsHidden="false" Name="o_led_d3" NodeType="0" PortIndex="8"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="0" PreSelectType="0" PreSelect="1" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

@@ -1,0 +1,17 @@
+rvl_alias "i_clock" "i_clock";
+RVL_ALIAS "i_clock" "i_clock"; 
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+LOCATE COMP "i_clock" SITE "69" ;
+IOBUF PORT "i_clock" IO_TYPE=LVCMOS33 ;
+BLOCK JTAGPATHS ;
+IOBUF PORT "i_switch_s1" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "i_switch_s2" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_led_d1" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_led_d2" IO_TYPE=LVCMOS33 ;
+IOBUF PORT "o_led_d3" IO_TYPE=LVCMOS33 ;
+LOCATE COMP "o_led_d1" SITE "28" ;
+LOCATE COMP "o_led_d2" SITE "30" ;
+LOCATE COMP "o_led_d3" SITE "31" ;
+LOCATE COMP "i_switch_s1" SITE "26" ;
+LOCATE COMP "i_switch_s2" SITE "27" ;

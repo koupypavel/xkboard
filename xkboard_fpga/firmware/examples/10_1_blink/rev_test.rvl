@@ -1,0 +1,31 @@
+<Project ModBy="Inserter" SigType="0" Name="C:/lscc/diamond/3.12/examples/Reveal_debugger/counter_reveal_MACHXO3D/blinky/rev_test.rvl" Date="2021-07-05">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/VHDL" Synthesis="lse" DeviceFamily="MachXO3D" DesignName="Blinky"/>
+    <Core InsertDataset="0" Insert="1" Reveal_sig="365608420" Name="tutorial_led_blink_LA0" ID="0">
+        <Setting>
+            <Clock SampleClk="i_clock" SampleEnable="0" EnableClk="" EnableClk_Pri="0"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="256"/>
+            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_tutorial_led_blink_LA0_net"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Type="SIG" Name="i_switch_s1"/>
+                <Sig Type="SIG" Name="i_switch_s2"/>
+                <Sig Type="SIG" Name="r_toggle_1hz"/>
+                <Sig Type="SIG" Name="r_toggle_10hz"/>
+                <Sig Type="SIG" Name="r_toggle_20hz"/>
+                <Sig Type="SIG" Name="r_toggle_5hz"/>
+                <Sig Type="SIG" Name="o_led_d1"/>
+                <Sig Type="SIG" Name="o_led_d2"/>
+                <Sig Type="SIG" Name="o_led_d3"/>
+            </Trace>
+            <Trigger>
+                <TU Serialbits="0" Type="0" ID="1" Sig="r_toggle_20hz,"/>
+                <TE MaxSequence="1" MaxEvnCnt="16" ID="1" Resource="1"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

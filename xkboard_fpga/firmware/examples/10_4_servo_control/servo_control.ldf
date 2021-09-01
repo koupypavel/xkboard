@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="servo_control" device="LCMXO3D-9400HC-5SG72C" default_implementation="servo_control">
+    <Options>
+        <Option name="HDL type" value="Verilog"/>
+        <Option name="VerilogStandard" value="Verilog 2001"/>
+    </Options>
+    <Implementation title="servo_control" dir="servo_control" description="servo_control" synthesis="lse" default_strategy="Strategy1">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="HDL_KEYFILE" value=""/>
+            <Option name="HDL_PARAM" value=""/>
+            <Option name="VERILOG_DIRECTIVES" value=""/>
+            <Option name="VerilogStandard" value="Verilog 2001"/>
+            <Option name="lib" value="work"/>
+            <Option name="top" value=""/>
+            <Option name="include path" value=""/>
+        </Options>
+        <Source name="top.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="servo_control.lpf" type="Logic Preference" type_short="LPF"/>
+        <Source name="servo_control/servo_control.xcf" type="Programming Project File" type_short="Programming"/>
+    </Implementation>
+    <Strategy name="Strategy1" file="servo_control1.sty"/>
+</BaliProject>

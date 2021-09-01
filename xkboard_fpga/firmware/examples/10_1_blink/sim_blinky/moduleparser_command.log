@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.12/bin/nt64/moduleparser.exe -PROJ sim_blinky -pf C:/lscc/diamond/3.12/cae_library/synthesis/vhdl/machxo3d.vhd -lib machxo3d -pf C:/lscc/diamond/3.12/cae_library/synthesis/verilog/machxo3d.v -pkg C:/lscc/diamond/3.12/cae_library/vhdl_packages/vdbs -lst C:/Users/pavel/Desktop/DP/projekt/dp/fpga_board/firmware/blinky/sim_blinky/source_files.lst

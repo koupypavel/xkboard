@@ -1,0 +1,15 @@
+if {![file exists "C:/Users/pavel/Desktop/DP/projekt/dp/fpga_board/firmware/blinky/sim_blinky/sim_blinky.mpf"]} { 
+	project new "C:/Users/pavel/Desktop/DP/projekt/dp/fpga_board/firmware/blinky/sim_blinky" sim_blinky
+	project addfile "C:/Users/pavel/Desktop/DP/projekt/dp/fpga_board/firmware/blinky/top.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "C:/Users/pavel/Desktop/DP/projekt/dp/fpga_board/firmware/blinky/top.vhd"
+} else {
+	project open "C:/Users/pavel/Desktop/DP/projekt/dp/fpga_board/firmware/blinky/sim_blinky/sim_blinky"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo3d  tutorial_led_blink
+view wave
+add wave /*
+run 1000ns

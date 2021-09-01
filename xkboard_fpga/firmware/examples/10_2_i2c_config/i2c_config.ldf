@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="i2c_config" device="LCMXO3D-9400HC-5SG72C" default_implementation="i2c_config_impl">
+    <Options>
+        <Option name="HDL type" value="Verilog"/>
+        <Option name="VerilogStandard" value="Verilog 2001"/>
+    </Options>
+    <Implementation title="i2c_config_impl" dir="i2c_config_impl" description="i2c_config_impl" synthesis="lse" default_strategy="Strategy1">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="HDL_KEYFILE" value=""/>
+            <Option name="HDL_PARAM" value=""/>
+            <Option name="VERILOG_DIRECTIVES" value=""/>
+            <Option name="VerilogStandard" value="Verilog 2001"/>
+            <Option name="lib" value="work"/>
+            <Option name="top" value=""/>
+            <Option name="include path" value=""/>
+        </Options>
+        <Source name="efb_i2c_conf.ipx" type="IPX_Module" type_short="IPX"/>
+        <Source name="i2c_config.lpf" type="Logic Preference" type_short="LPF"/>
+    </Implementation>
+    <Strategy name="Strategy1" file="i2c_config1.sty"/>
+</BaliProject>

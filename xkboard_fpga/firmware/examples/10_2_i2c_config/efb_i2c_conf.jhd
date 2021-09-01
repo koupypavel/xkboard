@@ -1,0 +1,11 @@
+MODULE efb_i2c_conf DEFIN efb_i2c_conf.vhd
+	SUBMODULE EFBB
+		INSTANCE EFBInst_0
+	SUBMODULE VLO
+		INSTANCE scuba_vlo_inst
+	SUBMODULE BB
+		INSTANCE BB1_scl
+	SUBMODULE BB
+		INSTANCE BB1_sda
+	SUBMODULE VHI
+		INSTANCE scuba_vhi_inst

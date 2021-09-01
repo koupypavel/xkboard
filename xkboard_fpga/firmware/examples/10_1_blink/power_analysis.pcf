@@ -1,0 +1,1607 @@
+[[Info]]
+_PARENT: none
+_FILE_FORMAT: 1.00
+_DATA_VALUES: 1.00
+_STATUS: Advanced
+_FAMILY: se5c00
+
+[[Project]]
+DesignName: tutorial_led_blink
+Version: 8.0
+Family: MachXO3D
+Device: LCMXO3D-9400HC
+Package: QFN72
+Operating: Commercial
+Performance: -6
+PartName: LCMXO3D-9400HC-6SG72C
+
+[[Settings]]
+EstimationMode: Medium
+ProcessType: Typical
+SoftwareMode: Calculation
+SectionY: Total Power
+SectionX: Vccio 3.3
+SectionLowerLimit: 3.0000
+SectionUpperLimit: 3.6000
+SectionResolution: 0.1200
+TempAmbY: Ambient Temperature
+TempAmbX: Ambient Temperature
+TempAmbLowerLimit: -40.0000
+TempAmbUpperLimit: 125.0000
+TempAmbResolution: 33.0000
+FreqY: Total Power
+FreqX: COMBINATORIAL
+FreqLowerLimit: 0.0000
+FreqUpperLimit: 100.0000
+FreqAmbResolution: 20.0000
+PowerMode: Normal
+DisableBandgap: false
+DisablePor: false
+DisableDll: false
+DisableOsc: false
+DisablePLL0: false
+DisablePLL1: false
+DisableInRd0: false
+DisableInRd1: false
+DisableInRd2: false
+DisableInRd3: false
+DisableInRd4: false
+DisableInRd5: false
+DisableInRd6: false
+DisableInRd7: false
+EnablePg0: false
+EnablePg1: false
+EnablePg2: false
+EnablePg3: false
+EnablePg4: false
+EnablePg5: false
+EnablePg6: false
+EnablePg7: false
+DisableLVDS: false
+DisableLVDS1: false
+DisableLVDS2: false
+DisableLVDS3: false
+DisableLVDS4: false
+DisableLVDS5: false
+DisableLVDS6: false
+DisableLVDS7: false
+DisableSlewrate0: false
+DisableSlewrate1: false
+DisableSlewrate2: false
+DisableSlewrate3: false
+DisableSlewrate4: false
+DisableSlewrate5: false
+
+[[Thermal]]
+Airflow: 200 LFM
+AmbientTemperature: 25
+CustomThetaSA: -1
+JunctionTemperature: 25.89
+MaxSafeAmbient: 83.08
+ThetaBA: 10.0
+ThetaCS: 0
+ThetaEffective: 7.91
+ThetaJA: 20.59
+ThetaJB: 12.88
+ThetaJC: 0
+ThetaSA: -1
+UserThetaBA: No
+UserThetaCS: No
+UserThetaEffective: No
+UserThetaJA: No
+UserThetaJB: No
+UserThetaJC: No
+UserThetaSA: No
+thetaBoard: Medium Board
+thetaHeatSink: No Heat Sink
+thetaOption: ThermalModels
+
+[[VDPM]]
+Supply = Voltage, DPM
+Vccio 3.3 = 3.300, 1.00
+Vccio 2.5 = 2.500, 1.00
+Vccio 1.8 = 1.800, 1.00
+Vccio 1.5 = 1.500, 1.00
+Vccio 1.2 = 1.200, 1.00
+Vcc = 3.300, 1.00
+
+[[Logic]]
+Clk = F, AF, LUT, RAM, RIPPLE, REG, X0, X1, X2, X6, ISB, ISBLUT, ISBCE, ISBLSR, ISBM, ISBCLK
+COMBINATORIAL = 0.0000^d^, 10.0000^d^, 109, 0, 11, 0, 73, 50, 181, 70, 181, 2, 54, 122, 3, 2
+jtaghub16_jtck = 0.0000^d^, 10.0000^d^, 196, 0, 26, 209, 372, 167, 688, 117, 860, 588, 71, 122, 70, 125
+i_clock_N = 0.0000^d^, 10.0000^d^, 165, 0, 57, 241, 295, 178, 562, 102, 1935, 1464, 52, 262, 139, 148
+
+[[Clocks]]
+Clk = F, Duty, Pfeed, Ptrunk, Pspine, Ptap, Pbranch, Strunk, Sspine, Stap, Sbranch, Etb, Ebg, Elr
+COMBINATORIAL = 0.0000^d^, 100, 0, 0, 0, 0, 0, t15_1, c13_3, r11_2_r18_2_r26_2, b_50, 0, 0, 0
+jtaghub16_jtck = 0.0000^d^, 100, f25_2, t15_1, s13_2_s36_1, p19_2_p23_3_p27_2, c20_7_c24_13_c28_4, t16_2, c13_1_c14_3, r11_1_r18_4_r26_1, b_36, 0, 0, 0
+i_clock_N = 0.0000^d^, 100, 0, t15_1, s14_1_s38_1, p18_2_p22_2_p26_2_p30_2, c19_3_c23_10_c27_10_c31_2, t15_3_t16_2, c13_3_c36_3_c37_2, r18_5_r26_7, b_58, 0, 0, 0
+
+[[Input Output]]
+Clk = _Type, _Mode, F, AF, IP, OP, PG, Cload, Bank, _ActualMode, _Pull, X0, X1, X2, X6, ISB
+COMBINATORIAL = LVCMOS33, none, 0.0000^d^, 10.0000^d^, 1, 0, OFF, 5, 2, none, UP, 0, 0, 0, 0, 0
+COMBINATORIAL = LVCMOS33, none, 0.0000^d^, 10.0000^d^, 2, 0, OFF, 5, 2, none, DOWN, 0, 0, 0, 0, 0
+i_clock_N = LVCMOS33-8mA-SLEW:FAST, none, 0.0000^d^, 10.0000^d^, 0, 3, N/A, 5, 2, none, DOWN, 0, 0, 0, 0, 0
+i_clock_N = LVCMOS33, none, 0.0000^d^, 10.0000^d^, 1, 0, OFF, 5, 0, none, DOWN, 0, 0, 0, 0, 0
+
+[[Bidi]]
+ClkInpName = _Type, _Mode, InpF, InpAF, Bidi, PG, ClkOutName, OutF, OutAF, Duty, Cload, Bank, _ActualMode, _Pull, X0, X1, X2, X6, ISB
+COMBINATORIAL = LVCMOS33-8mA-SLEW:SLOW, none, 0.0000^d^, 10.0000^d^, 2, OFF, N/A, 0.0000^d^, 10.0000^d^, 50, 5, 2, none, NONE, 0, 0, 0, 0, 0
+COMBINATORIAL = LVCMOS33-8mA-SLEW:SLOW, none, 0.0000^d^, 10.0000^d^, 1, OFF, N/A, 0.0000^d^, 10.0000^d^, 50, 5, 2, none, UP, 0, 0, 0, 0, 0
+
+[[Bank Voltage]]
+Bank = Voltage, InRD, LVDSO, PG, SLEWRATE
+0 = Vccio 3.3, No, No, OFF, No
+1 = Vccio 2.5, No, N/A, N/A, No
+2 = Vccio 3.3, No, N/A, OFF, No
+3 = Vccio 2.5, No, N/A, N/A, No
+
+[[Termination]]
+_Type = IP, OP, Bidi, Duty, Bank, Rth, Vth
+LVCMOS33 = 3, 0, 0, 0.000000, 2, 1.0E12, 0
+LVCMOS33-8mA-SLEW:FAST = 0, 3, 0, 0.000000, 2, 1.0E12, 0
+LVCMOS33 = 1, 0, 0, 0.000000, 0, 1.0E12, 0
+LVCMOS33-8mA-SLEW:SLOW = 0, 0, 3, 50.000000, 2, 1.0E12, 0
+
+[[SP RAM]]
+Clk = EBR, F, AF, _Type, X0, X1, X2, X6, ISB
+
+[[DP RAM]]
+RdClk = RdF, RdAF, EBR, WrClk, WrF, WrAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[DP RAM True]]
+ClkA = aF, aAF, EBR, ClkB, bF, bAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+i_clock_N = 0.0000^d^, 10.0000^d^, 1, i_clock_N, 0.0000^d^, 10.0000^d^, DP8KC_NORM_PORTA, DP8KC_NORM_PORTB, 0, 0, 0, 0, 0
+i_clock_N = 0.0000^d^, 10.0000^d^, 1, jtaghub16_jtck, 0.0000^d^, 10.0000^d^, DP8KC_NORM_PORTA, DP8KC_NORM_PORTB, 0, 0, 0, 0, 0
+
+[[FIFO DC]]
+RdClk = RdF, RdAF, EBR, WrClk, WrF, WrAF, _TypeA, _TypeB, X0, X1, X2, X6, ISB
+
+[[PLL]]
+OutClk = inF, N, V, M, PLL, STANDBY
+
+[[DQSDLL]]
+Clk = F, DQSDLL
+
+[[DLLDEL]]
+Clk = F, DLLDEL
+
+[[CLKDIV]]
+Clk = F, AF, CLKDIV
+
+[[CIBTEST]]
+CIBTEST = 
+0 = 
+
+[[MCLK]]
+STANDBY = Clk, F, AF, MCLK, MCLKF, SEDF
+No = _CLKNAME, 266.0000, 100.0000, 1, 2.0800, 2.0800
+
+[[POR]]
+STANDBY = 
+No = 
+
+[[BANDGAP]]
+STANDBY = 
+No = 
+
+[[JTAG]]
+Clk = F, AF, Input, Output
+COMBINATORIAL = 0.0000^d^, 100.0000, 3, 1
+
+[[SED]]
+_Mode = SED, STATUS
+SEDFA = 0, Disabled
+
+[[I2C1]]
+Clk = F, AF, I2C1
+
+[[I2C2]]
+Clk = F, AF, I2C2
+
+[[SPI]]
+Clk = F, AF, SPI
+
+[[TC]]
+Clk = F, AF, TC, WBUSED
+
+[[UFM]]
+Clk = F, AF, UFMID, UFM
+
+[[CFG]]
+Clk = F, AF, CFGID, CFG
+
+[[WISHBONE]]
+Clk = F, AF, WISHBONE
+
+[[ESB]]
+Clk = F, AF, ESB
+
+[[PLL Clock]]
+Out = In
+
+[[Connections]]
+Clock = Comp, Type
+COMBINATORIAL = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_42, 0
+COMBINATORIAL = SYSCONFIG_PIN_MCLK, 1
+COMBINATORIAL = SYSCONFIG_PIN_SO, 1
+COMBINATORIAL = SYSCONFIG_PIN_SI, 1
+jtaghub16_jtck = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_66, 0
+i_clock_N = i_clock, 1
+i_clock_N = o_led_d3, 1
+i_clock_N = o_led_d2, 1
+i_clock_N = o_led_d1, 1
+
+[[Hierarchical Connections]]
+Key = Name, Type
+SIGNAL = COMBINATORIAL, DUMMY
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_42, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_43, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_46, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_47, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_48, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_49, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_61, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_62, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_63, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_64, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_65, SLICE
+INPUT = i7329/SLICE_314, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/mux_506_i1/SLICE_315, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/i7420/SLICE_316, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/mux_510_i3/SLICE_317, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/i7306/SLICE_318, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/mux_510_i7/SLICE_319, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/mux_510_i6/SLICE_320, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/mux_510_i4/SLICE_321, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/i7343/SLICE_322, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/i7133/SLICE_323, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/i7303/SLICE_324, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/i7424/SLICE_325, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/i7127/SLICE_326, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jtdo_first_bit_I_16/SLICE_327, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/i7316/SLICE_328, SLICE
+INPUT = se5chub/SLICE_329, SLICE
+INPUT = SLICE_330, SLICE
+INPUT = SLICE_331, SLICE
+INPUT = SLICE_332, SLICE
+INPUT = SLICE_333, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_337, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_341, SLICE
+INPUT = SLICE_342, SLICE
+INPUT = SLICE_343, SLICE
+INPUT = SLICE_345, SLICE
+INPUT = SLICE_347, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_356, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_357, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_375, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_380, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_381, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_384, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_387, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_389, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_390, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_392, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_393, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_394, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_396, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_399, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_401, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_403, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_410, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_413, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_415, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_416, SLICE
+INPUT = SLICE_417, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_418, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_420, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_424, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_425, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_427, SLICE
+INPUT = se5chub/SLICE_428, SLICE
+INPUT = SLICE_431, SLICE
+INPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_432, SLICE
+INPUT = i_switch_s2, PIO
+INPUT = i_switch_s1, PIO
+INPUT = se5chub/genblk7.jtagf_u, JTAG
+INPUT = SYSCONFIG_PIN_MCLK, PIO
+INPUT = SYSCONFIG_PIN_SO, PIO
+INPUT = SYSCONFIG_PIN_SN, PIO
+INPUT = SYSCONFIG_PIN_SI, PIO
+SIGNAL = jtaghub16_jtck, DUMMY
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_66, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n38, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr[7], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_67, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n40, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr[5], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n39, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr[6], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7011, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_68, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n42, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr[3], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n41, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr[4], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7010, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_69, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n44, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr[1], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n43, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr[2], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7009, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_70, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n45, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr[0], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7008, FCO
+OUTPUT = SLICE_71, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n34, F0
+OUTPORT = jtaghub16_ip_enable0, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n33, F1
+OUTPORT = se5chub/ip_enable[10], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n7006, FCO
+OUTPUT = SLICE_72, SLICE
+OUTPORT = se5chub/id_enable, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n35, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n7005, FCO
+OUTPUT = SLICE_73, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n30, F0
+OUTPORT = se5chub/ip_enable[13], Q0
+OUTPORT = se5chub/ip_enable[14], Q1
+OUTPUT = SLICE_74, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n32, F0
+OUTPORT = se5chub/ip_enable[11], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n31, F1
+OUTPORT = se5chub/ip_enable[12], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n7007, FCO
+OUTPUT = se5chub/SLICE_77, SLICE
+OUTPORT = se5chub/bit_count_s[0], F1
+OUTPORT = se5chub/bit_count[0], Q1
+OUTPORT = se5chub/bit_count_cry[0], FCO
+OUTPUT = se5chub/SLICE_78, SLICE
+OUTPORT = se5chub/er1_shift_reg[1], Q0
+OUTPORT = se5chub/jtdo2_int, F1
+OUTPORT = se5chub/er1_shift_reg[20], Q1
+OUTPUT = se5chub/SLICE_79, SLICE
+OUTPORT = se5chub/er1_shift_reg[2], Q0
+OUTPORT = se5chub/er1_shift_reg[3], Q1
+OUTPORT = se5chub/jtdo2_int_prm_2_0, FCO
+OUTPUT = se5chub/SLICE_80, SLICE
+OUTPORT = se5chub/er1_shift_reg[4], Q0
+OUTPORT = se5chub/er1_shift_reg[5], Q1
+OUTPORT = se5chub/jtdo2_int_prm_4_0, FCO
+OUTPUT = se5chub/SLICE_81, SLICE
+OUTPORT = se5chub/er1_shift_reg[6], Q0
+OUTPORT = se5chub/er1_shift_reg[7], Q1
+OUTPORT = se5chub/jtdo2_int_prm_6_0, FCO
+OUTPUT = se5chub/SLICE_82, SLICE
+OUTPORT = se5chub/er1_shift_reg[8], Q0
+OUTPORT = se5chub/er1_shift_reg[9], Q1
+OUTPORT = se5chub/jtdo2_int_prm_8_0, FCO
+OUTPUT = se5chub/SLICE_83, SLICE
+OUTPORT = se5chub/er1_shift_reg[12], Q0
+OUTPORT = se5chub/er1_shift_reg[13], Q1
+OUTPORT = se5chub/jtdo2_int_prm_10_0, FCO
+OUTPUT = se5chub/SLICE_84, SLICE
+OUTPORT = se5chub/er1_shift_reg[14], Q0
+OUTPORT = se5chub/er1_shift_reg[15], Q1
+OUTPORT = se5chub/jtdo2_int_prm_12_0, FCO
+OUTPUT = se5chub/SLICE_85, SLICE
+OUTPORT = se5chub/er1_shift_reg[16], Q0
+OUTPORT = se5chub/er1_shift_reg[17], Q1
+OUTPORT = se5chub/jtdo2_int_prm_14_0, FCO
+OUTPUT = se5chub/SLICE_86, SLICE
+OUTPORT = se5chub/er1_shift_reg[18], Q0
+OUTPORT = se5chub/er1_shift_reg[19], Q1
+OUTPORT = se5chub/jtdo2_int_prm_16_0, FCO
+OUTPUT = se5chub/SLICE_87, SLICE
+OUTPORT = se5chub/rom_rd_addr_s[7], F0
+OUTPORT = se5chub/rom_rd_addr[7], Q0
+OUTPORT = se5chub/bit_count, Q1
+OUTPUT = se5chub/SLICE_88, SLICE
+OUTPORT = se5chub/rom_rd_addr_s[5], F0
+OUTPORT = se5chub/rom_rd_addr[5], Q0
+OUTPORT = se5chub/rom_rd_addr_s[6], F1
+OUTPORT = se5chub/rom_rd_addr[6], Q1
+OUTPORT = se5chub/rom_rd_addr_cry[6], FCO
+OUTPUT = se5chub/SLICE_89, SLICE
+OUTPORT = se5chub/rom_rd_addr_s[3], F0
+OUTPORT = se5chub/rom_rd_addr[3], Q0
+OUTPORT = se5chub/rom_rd_addr_s[4], F1
+OUTPORT = se5chub/rom_rd_addr[4], Q1
+OUTPORT = se5chub/rom_rd_addr_cry[4], FCO
+OUTPUT = se5chub/SLICE_90, SLICE
+OUTPORT = se5chub/rom_rd_addr_s[1], F0
+OUTPORT = se5chub/rom_rd_addr[1], Q0
+OUTPORT = se5chub/rom_rd_addr_s[2], F1
+OUTPORT = se5chub/rom_rd_addr[2], Q1
+OUTPORT = se5chub/rom_rd_addr_cry[2], FCO
+OUTPUT = se5chub/SLICE_91, SLICE
+OUTPORT = se5chub/jce1_d1, Q0
+OUTPORT = se5chub/rom_rd_addr_s[0], F1
+OUTPORT = se5chub/rom_rd_addr[0], Q1
+OUTPORT = se5chub/rom_rd_addr_cry[0], FCO
+OUTPUT = se5chub/SLICE_92, SLICE
+OUTPORT = se5chub/bit_count_s[3], F0
+OUTPORT = se5chub/bit_count[3], Q0
+OUTPORT = se5chub/bit_count_s[4], F1
+OUTPORT = se5chub/bit_count[4], Q1
+OUTPUT = se5chub/SLICE_93, SLICE
+OUTPORT = se5chub/bit_count_s[1], F0
+OUTPORT = se5chub/bit_count[1], Q0
+OUTPORT = se5chub/bit_count_s[2], F1
+OUTPORT = se5chub/bit_count[2], Q1
+OUTPORT = se5chub/bit_count_cry[2], FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_120, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[3], F0
+OUTPORT = tm_crc[3], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n8387, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_123, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/cmd_block_extend_N_524, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/cmd_block_extend, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n7162, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_138, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n43, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/bit_cnt[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n42, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/bit_cnt[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_139, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n41, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/bit_cnt[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n40, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/bit_cnt[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_140, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n39, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/bit_cnt[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n38, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/bit_cnt[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_141, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n8415, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/capture_dr_d1, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jtck_N_223_enable_103, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/capture_dr_d2, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_148, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n8425, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_d1, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8388, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_d2, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_152, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/parity_calc_N_476, OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/parity_calc, Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_153, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/parity_err_N_416, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/parity_err, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8437, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_d6, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_157, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[35], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg[35], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8784, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[15], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_158, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout_8__N_301[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout_8__N_301[1], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_159, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout_8__N_301[2], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout_8__N_301[3], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_160, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout_8__N_301[4], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout_8__N_301[5], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_161, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout_8__N_301[6], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout_8__N_301[7], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_162, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/shift_reg_tr_dout_8__N_301[8], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg_tr_dout[8], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n141, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_163, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[1], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_164, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[2], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[4], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[4], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_165, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[5], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[5], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[6], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[6], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_166, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[7], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[7], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[8], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[8], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_167, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[9], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[9], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[10], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[10], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_168, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[11], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[11], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[12], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[12], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_169, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[13], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[13], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[14], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[14], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_170, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc_15__N_310[15], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_crc[15], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/jtck_N_223_enable_49, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_172, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/tr_dout_bit_cnt_4__N_400[3], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tr_dout_bit_cnt[3], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tr_dout_bit_cnt_4__N_400[4], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tr_dout_bit_cnt[4], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_173, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[3], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_174, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[4], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[5], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_175, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[6], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[7], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_176, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[8], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[8], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[9], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[9], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_177, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[10], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[10], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[11], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[11], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_178, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[12], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[12], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[13], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[13], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_179, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[14], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[14], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[15], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc[15], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_180, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_clr_N_499, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_clr, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8436, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_181, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/tt_crc_en_N_487, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_en, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/jtck_N_223_enable_7, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_190, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/parity_checker_N_471, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/parity_checker, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jtck_N_223_enable_18, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_225, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8392, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_rd_addr_cntr_7__N_1029[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n16, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_264, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n103, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n102, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_265, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n101, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n100, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_266, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n99, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n98, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_267, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n97, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n96, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_268, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n95, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[8], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n94, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[9], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_269, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n93, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[10], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n92, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[11], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_270, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n91, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[12], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n90, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[13], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_271, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n89, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[14], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n88, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt[15], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_282, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/tt_prog_active_N_813, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/tt_prog_active, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n2787, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_284, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/tt_wr_addr_cntr_0__N_631, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/tt_wr_addr_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n8458, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/tt_start_d1, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_289, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[1], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tt_crc[1], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tt_crc_15__N_362[2], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tt_crc[2], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_290, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n7422, OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tt_prog_en_0, Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_291, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[0], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[0], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_292, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[1], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[1], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_293, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[2], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[8], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[8], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_294, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[3], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[3], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_295, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[4], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[4], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_296, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[5], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[5], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_297, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[6], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[6], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_298, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[7], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[7], Q0
+OUTPUT = SLICE_299, SLICE
+OUTPORT = addr_15__N_326[9], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[9], Q0
+OUTPUT = SLICE_300, SLICE
+OUTPORT = addr_15__N_326[10], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[10], Q0
+OUTPUT = SLICE_301, SLICE
+OUTPORT = addr_15__N_326[11], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[11], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_302, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[12], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[12], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_303, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[13], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[13], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n308, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_304, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr_15__N_326[14], OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wr_din[14], Q0
+OUTPUT = SLICE_306, SLICE
+OUTPORT = se5chub/id_enable_0_sqmuxa, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/jshift_d1, Q0
+OUTPORT = se5chub/jtdo1_1_0, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jshift_d2, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_308, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n16, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/r_w, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n5_adj_1223, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_309, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n1866, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/te_block, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/tt_wr_bit_cntr_0__N_610, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_310, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n8433, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/tm_first_rd_d2, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7682, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_first_rd_d1, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_311, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/tr_dout_bit_cnt_4__N_400[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/tr_dout_bit_cnt[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tr_dout_bit_cnt_4__N_400[1], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/tr_dout_bit_cnt[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_312, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/tr_dout_bit_cnt_4__N_400[2], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/tr_dout_bit_cnt[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n47, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_313, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n4, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/trace_dout[8], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n28, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trace_dout[0], Q1
+OUTPUT = SLICE_338, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/reg0_read_N_896, F0
+OUTPORT = se5chub/ip_enable[7], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/wen, F1
+OUTPORT = se5chub/ip_enable[8], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_340, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n799, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg[32], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8424, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg[33], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_360, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/rd_dout_te_15__N_645[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/jshift_d2, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n7623, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_366, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8401, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trace_dout[3], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8427, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trace_dout[4], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_367, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/decode_u/n7768, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trace_dout[5], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n27, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trace_dout[6], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_368, SLICE
+OUTPORT = n8419, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trace_dout[7], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8445, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_373, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8460, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[14], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/clk_N_keep_enable_20, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[15], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_374, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n6, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8412, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_376, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/clk_N_keep_enable_48, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[12], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n73, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[13], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_379, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n5, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8420, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_382, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/clk_N_keep_enable_17, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr[10], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n3292, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr[11], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_383, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n9, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/tm_shift_en, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n496, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_385, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n140, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_d4, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n8430, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_d5, Q1
+OUTPUT = SLICE_386, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/cnt_contig_reg_wen, F0
+OUTPORT = se5chub/ip_enable[9], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8451, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_388, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_then_wen, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/addr_15_d1, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n8450, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/capture_dr_d3, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_391, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n39, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/capture_dr_d4, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n8446, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/capture_dr_d5, Q1
+OUTPUT = se5chub/SLICE_395, SLICE
+OUTPORT = se5chub/jtdo1, F0
+OUTPORT = se5chub/er1_shift_reg[10], Q0
+OUTPORT = se5chub/jtdo1_1_1, F1
+OUTPORT = se5chub/er1_shift_reg[11], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_397, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n8, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/addr_15, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n7929, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_400, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/clk_N_keep_enable_94, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trace_dout[1], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/clk_N_keep_enable_92, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trace_dout[2], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_402, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8407, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8400, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_404, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8426, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[8], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/clk_N_keep_enable_59, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/addr[9], Q1
+OUTPUT = SLICE_405, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jtck_N_223_enable_14, F0
+OUTPORT = se5chub/ip_enable[3], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n8411, F1
+OUTPORT = se5chub/ip_enable[4], Q1
+OUTPUT = SLICE_406, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jtck_N_223_enable_34, F0
+OUTPORT = se5chub/ip_enable[5], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n8402, F1
+OUTPORT = se5chub/ip_enable[6], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_412, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int_8__N_1002, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/parity_err_lat, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/clk_N_keep_enable_101, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_414, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8413, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n7764, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/addr[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_421, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n142, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jce2_d3, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n147, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_d3, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_422, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n143, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jce2_d1, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n146, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jce2_d2, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_423, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n144, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/te_prog_din[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n145, F1
+OUTPUT = SLICE_426, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n8440, F0
+OUTPORT = se5chub/ip_enable[1], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n652, F1
+OUTPORT = se5chub/ip_enable[2], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_429, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n10, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/shift_reg[34], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n14, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pmi_ram_dpXO3Dbinarynonespeedasyncdisablereg9825698256/pmi_ram_dpXbnonesadr9825698256119b0f18_0_0_0, EBR
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[0], DOB0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[1], DOB1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[2], DOB2
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[3], DOB3
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[4], DOB4
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[5], DOB5
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[6], DOB6
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[7], DOB7
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[8], DOB8
+SIGNAL = i_clock_N, DUMMY
+INPUT = i_clock, PIO
+OUTPUT = SLICE_0, SLICE
+OUTPORT = n100, F0
+OUTPORT = r_CNT_10HZ[5], Q0
+OUTPORT = n99_adj_1243, F1
+OUTPORT = r_CNT_10HZ[6], Q1
+OUTPORT = n7048, FCO
+OUTPUT = SLICE_1, SLICE
+OUTPORT = n102, F0
+OUTPORT = r_CNT_10HZ[3], Q0
+OUTPORT = n101, F1
+OUTPORT = r_CNT_10HZ[4], Q1
+OUTPORT = n7047, FCO
+OUTPUT = SLICE_2, SLICE
+OUTPORT = n104, F0
+OUTPORT = r_CNT_10HZ[1], Q0
+OUTPORT = n103, F1
+OUTPORT = r_CNT_10HZ[2], Q1
+OUTPORT = n7046, FCO
+OUTPUT = SLICE_3, SLICE
+OUTPORT = n105, F1
+OUTPORT = r_CNT_10HZ[0], Q1
+OUTPORT = n7045, FCO
+OUTPUT = SLICE_4, SLICE
+OUTPORT = n83, F0
+OUTPORT = r_CNT_20HZ[17], Q0
+OUTPORT = n82, F1
+OUTPORT = r_CNT_20HZ[18], Q1
+OUTPUT = SLICE_5, SLICE
+OUTPORT = n99, F0
+OUTPORT = r_CNT_1HZ[21], Q0
+OUTPORT = n98, F1
+OUTPORT = r_CNT_1HZ[22], Q1
+OUTPUT = SLICE_6, SLICE
+OUTPORT = n85, F0
+OUTPORT = r_CNT_20HZ[15], Q0
+OUTPORT = n84, F1
+OUTPORT = r_CNT_20HZ[16], Q1
+OUTPORT = n7043, FCO
+OUTPUT = SLICE_7, SLICE
+OUTPORT = n87_adj_1252, F0
+OUTPORT = r_CNT_20HZ[13], Q0
+OUTPORT = n86_adj_1253, F1
+OUTPORT = r_CNT_20HZ[14], Q1
+OUTPORT = n7042, FCO
+OUTPUT = SLICE_8, SLICE
+OUTPORT = n89_adj_1250, F0
+OUTPORT = r_CNT_20HZ[11], Q0
+OUTPORT = n88_adj_1251, F1
+OUTPORT = r_CNT_20HZ[12], Q1
+OUTPORT = n7041, FCO
+OUTPUT = SLICE_9, SLICE
+OUTPORT = n91_adj_1248, F0
+OUTPORT = r_CNT_20HZ[9], Q0
+OUTPORT = n90_adj_1249, F1
+OUTPORT = r_CNT_20HZ[10], Q1
+OUTPORT = n7040, FCO
+OUTPUT = SLICE_10, SLICE
+OUTPORT = n93_adj_1286, F0
+OUTPORT = r_CNT_20HZ[7], Q0
+OUTPORT = n92_adj_1287, F1
+OUTPORT = r_CNT_20HZ[8], Q1
+OUTPORT = n7039, FCO
+OUTPUT = SLICE_11, SLICE
+OUTPORT = n95_adj_1284, F0
+OUTPORT = r_CNT_20HZ[5], Q0
+OUTPORT = n94_adj_1285, F1
+OUTPORT = r_CNT_20HZ[6], Q1
+OUTPORT = n7038, FCO
+OUTPUT = SLICE_12, SLICE
+OUTPORT = n97_adj_1282, F0
+OUTPORT = r_CNT_20HZ[3], Q0
+OUTPORT = n96_adj_1283, F1
+OUTPORT = r_CNT_20HZ[4], Q1
+OUTPORT = n7037, FCO
+OUTPUT = SLICE_13, SLICE
+OUTPORT = n99_adj_1280, F0
+OUTPORT = r_CNT_20HZ[1], Q0
+OUTPORT = n98_adj_1281, F1
+OUTPORT = r_CNT_20HZ[2], Q1
+OUTPORT = n7036, FCO
+OUTPUT = SLICE_14, SLICE
+OUTPORT = n100_adj_1279, F1
+OUTPORT = r_CNT_20HZ[0], Q1
+OUTPORT = n7035, FCO
+OUTPUT = SLICE_15, SLICE
+OUTPORT = n101_adj_1245, F0
+OUTPORT = r_CNT_1HZ[19], Q0
+OUTPORT = n100_adj_1247, F1
+OUTPORT = r_CNT_1HZ[20], Q1
+OUTPORT = n6995, FCO
+OUTPUT = SLICE_16, SLICE
+OUTPORT = n91_adj_1274, F0
+OUTPORT = r_CNT_5HZ[19], Q0
+OUTPORT = n90_adj_1273, F1
+OUTPORT = r_CNT_5HZ[20], Q1
+OUTPUT = SLICE_17, SLICE
+OUTPORT = n93_adj_1259, F0
+OUTPORT = r_CNT_5HZ[17], Q0
+OUTPORT = n92_adj_1272, F1
+OUTPORT = r_CNT_5HZ[18], Q1
+OUTPORT = n7033, FCO
+OUTPUT = SLICE_18, SLICE
+OUTPORT = n95_adj_1261, F0
+OUTPORT = r_CNT_5HZ[15], Q0
+OUTPORT = n94_adj_1260, F1
+OUTPORT = r_CNT_5HZ[16], Q1
+OUTPORT = n7032, FCO
+OUTPUT = SLICE_19, SLICE
+OUTPORT = n97_adj_1263, F0
+OUTPORT = r_CNT_5HZ[13], Q0
+OUTPORT = n96_adj_1262, F1
+OUTPORT = r_CNT_5HZ[14], Q1
+OUTPORT = n7031, FCO
+OUTPUT = SLICE_20, SLICE
+OUTPORT = n99_adj_1265, F0
+OUTPORT = r_CNT_5HZ[11], Q0
+OUTPORT = n98_adj_1264, F1
+OUTPORT = r_CNT_5HZ[12], Q1
+OUTPORT = n7030, FCO
+OUTPUT = SLICE_21, SLICE
+OUTPORT = n101_adj_1267, F0
+OUTPORT = r_CNT_5HZ[9], Q0
+OUTPORT = n100_adj_1266, F1
+OUTPORT = r_CNT_5HZ[10], Q1
+OUTPORT = n7029, FCO
+OUTPUT = SLICE_22, SLICE
+OUTPORT = n103_adj_1269, F0
+OUTPORT = r_CNT_5HZ[7], Q0
+OUTPORT = n102_adj_1268, F1
+OUTPORT = r_CNT_5HZ[8], Q1
+OUTPORT = n7028, FCO
+OUTPUT = SLICE_23, SLICE
+OUTPORT = n105_adj_1256, F0
+OUTPORT = r_CNT_5HZ[5], Q0
+OUTPORT = n104_adj_1270, F1
+OUTPORT = r_CNT_5HZ[6], Q1
+OUTPORT = n7027, FCO
+OUTPUT = SLICE_24, SLICE
+OUTPORT = n117, F0
+OUTPORT = r_CNT_1HZ[3], Q0
+OUTPORT = n116, F1
+OUTPORT = r_CNT_1HZ[4], Q1
+OUTPORT = n6987, FCO
+OUTPUT = SLICE_25, SLICE
+OUTPORT = n103_adj_1246, F0
+OUTPORT = r_CNT_1HZ[17], Q0
+OUTPORT = n102_adj_1244, F1
+OUTPORT = r_CNT_1HZ[18], Q1
+OUTPORT = n6994, FCO
+OUTPUT = SLICE_26, SLICE
+OUTPORT = n107, F0
+OUTPORT = r_CNT_5HZ[3], Q0
+OUTPORT = n106, F1
+OUTPORT = r_CNT_5HZ[4], Q1
+OUTPORT = n7026, FCO
+OUTPUT = SLICE_27, SLICE
+OUTPORT = n105_adj_1276, F0
+OUTPORT = r_CNT_1HZ[15], Q0
+OUTPORT = n104_adj_1278, F1
+OUTPORT = r_CNT_1HZ[16], Q1
+OUTPORT = n6993, FCO
+OUTPUT = SLICE_28, SLICE
+OUTPORT = n107_adj_1258, F0
+OUTPORT = r_CNT_1HZ[13], Q0
+OUTPORT = n106_adj_1271, F1
+OUTPORT = r_CNT_1HZ[14], Q1
+OUTPORT = n6992, FCO
+OUTPUT = SLICE_29, SLICE
+OUTPORT = n120, F1
+OUTPORT = r_CNT_1HZ[0], Q1
+OUTPORT = n6985, FCO
+OUTPUT = SLICE_30, SLICE
+OUTPORT = n109_adj_1255, F0
+OUTPORT = r_CNT_5HZ[1], Q0
+OUTPORT = n108, F1
+OUTPORT = r_CNT_5HZ[2], Q1
+OUTPORT = n7025, FCO
+OUTPUT = SLICE_31, SLICE
+OUTPORT = n119, F0
+OUTPORT = r_CNT_1HZ[1], Q0
+OUTPORT = n118, F1
+OUTPORT = r_CNT_1HZ[2], Q1
+OUTPORT = n6986, FCO
+OUTPUT = SLICE_32, SLICE
+OUTPORT = n109, F0
+OUTPORT = r_CNT_1HZ[11], Q0
+OUTPORT = n108_adj_1257, F1
+OUTPORT = r_CNT_1HZ[12], Q1
+OUTPORT = n6991, FCO
+OUTPUT = SLICE_33, SLICE
+OUTPORT = n111, F0
+OUTPORT = r_CNT_1HZ[9], Q0
+OUTPORT = n110, F1
+OUTPORT = r_CNT_1HZ[10], Q1
+OUTPORT = n6990, FCO
+OUTPUT = SLICE_34, SLICE
+OUTPORT = n110_adj_1254, F1
+OUTPORT = r_CNT_5HZ[0], Q1
+OUTPORT = n7024, FCO
+OUTPUT = SLICE_35, SLICE
+OUTPORT = n113, F0
+OUTPORT = r_CNT_1HZ[7], Q0
+OUTPORT = n112, F1
+OUTPORT = r_CNT_1HZ[8], Q1
+OUTPORT = n6989, FCO
+OUTPUT = SLICE_36, SLICE
+OUTPORT = n86, F0
+OUTPORT = r_CNT_10HZ[19], Q0
+OUTPUT = SLICE_37, SLICE
+OUTPORT = n88, F0
+OUTPORT = r_CNT_10HZ[17], Q0
+OUTPORT = n87, F1
+OUTPORT = r_CNT_10HZ[18], Q1
+OUTPORT = n7054, FCO
+OUTPUT = SLICE_38, SLICE
+OUTPORT = n115, F0
+OUTPORT = r_CNT_1HZ[5], Q0
+OUTPORT = n114, F1
+OUTPORT = r_CNT_1HZ[6], Q1
+OUTPORT = n6988, FCO
+OUTPUT = SLICE_39, SLICE
+OUTPORT = n90, F0
+OUTPORT = r_CNT_10HZ[15], Q0
+OUTPORT = n89, F1
+OUTPORT = r_CNT_10HZ[16], Q1
+OUTPORT = n7053, FCO
+OUTPUT = SLICE_40, SLICE
+OUTPORT = n92, F0
+OUTPORT = r_CNT_10HZ[13], Q0
+OUTPORT = n91, F1
+OUTPORT = r_CNT_10HZ[14], Q1
+OUTPORT = n7052, FCO
+OUTPUT = SLICE_41, SLICE
+OUTPORT = n94, F0
+OUTPORT = r_CNT_10HZ[11], Q0
+OUTPORT = n93, F1
+OUTPORT = r_CNT_10HZ[12], Q1
+OUTPORT = n7051, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_44, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n74, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_event_cnt_cntg_reg[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n73, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n7022, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_45, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n76, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/num_then_reg[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n75, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n7021, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_50, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/next_then_reg[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n85, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n7016, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_51, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n451, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/num_pre_trig_frm[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/num_pre_trig_frm[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_52, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n453, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/num_post_trig_frm[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n452, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_post_trig_frm[7], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7004, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_53, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n455, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_post_trig_frm[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n454, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_post_trig_frm[5], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7003, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_54, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n457, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_post_trig_frm[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n456, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_post_trig_frm[3], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7002, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_55, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/num_post_trig_frm[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n458, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_post_trig_frm[1], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7001, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_56, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n888, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/start_d, Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_57, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n890, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/start, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n889, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7000, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_58, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n892, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/num_pre_trig_frm[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n891, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_pre_trig_frm[7], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n6999, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_59, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n894, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_pre_trig_frm[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n893, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_pre_trig_frm[5], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n6998, FCO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_60, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/num_pre_trig_frm[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n895, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/num_pre_trig_frm[3], Q1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n6997, FCO
+OUTPUT = SLICE_75, SLICE
+OUTPORT = n96, F0
+OUTPORT = r_CNT_10HZ[9], Q0
+OUTPORT = n95, F1
+OUTPORT = r_CNT_10HZ[10], Q1
+OUTPORT = n7050, FCO
+OUTPUT = SLICE_76, SLICE
+OUTPORT = n98_adj_1242, F0
+OUTPORT = r_CNT_10HZ[7], Q0
+OUTPORT = n97, F1
+OUTPORT = r_CNT_10HZ[8], Q1
+OUTPORT = n7049, FCO
+OUTPUT = SLICE_95, SLICE
+OUTPORT = r_TOGGLE_10HZ_N_183, F0
+OUTPORT = r_TOGGLE_10HZ, Q0
+OUTPORT = n8409, F1
+OUTPUT = SLICE_96, SLICE
+OUTPORT = r_TOGGLE_1HZ_N_181, F0
+OUTPORT = r_TOGGLE_1HZ, Q0
+OUTPUT = SLICE_97, SLICE
+OUTPORT = r_TOGGLE_20HZ_N_182, F0
+OUTPORT = r_TOGGLE_20HZ, Q0
+OUTPORT = n8418, F1
+OUTPUT = SLICE_98, SLICE
+OUTPORT = r_TOGGLE_5HZ_N_180, F0
+OUTPORT = r_TOGGLE_5HZ, Q0
+OUTPORT = n8408, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_99, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[3], F0
+OUTPORT = rd_dout_tm[3], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7893, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_129, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/armed_N_1188, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/armed, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n1208, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_130, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/capture_N_1211, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/capture, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8464, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_132, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/clear_N_1206, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/clear, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8421, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_144, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/capture_reclk_3__N_246, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/capture_reclk[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/capture_reclk[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_151, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_reclk_3__N_240, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_reclk[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n6_adj_1229, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jupdate_reclk[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_191, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[4], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[4], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_192, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[5], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[5], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[6], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[6], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_193, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[7], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[7], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[10], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[10], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_194, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[11], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[11], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[12], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[12], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_195, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[15], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/rd_dout_tm[15], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8393, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_197, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/reg0_3__N_863[3], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/reg0[3], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n7300, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_200, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/armed_p1_N_1198, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/armed_p1, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8406, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_201, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n3019, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/force_trig, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/clk_N_keep_enable_19, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_202, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/full_N_1177, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/full, Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_203, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/full_reg_N_1183, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/full_reg, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/clk_N_keep_enable_51, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_207, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/mem_full_cntr_0__N_961, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/mem_full_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n15, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_211, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr_7__N_1120[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr_7__N_1120[1], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_212, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr_7__N_1120[2], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr_7__N_1120[3], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_213, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr_7__N_1120[4], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr_7__N_1120[5], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_214, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr_7__N_1120[6], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr_7__N_1120[7], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/post_trig_cntr[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_215, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cap_reg_15__N_973, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cap_reg[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n7586, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_216, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_7__N_1112[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_7__N_1112[1], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_217, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_7__N_1112[2], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_7__N_1112[3], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_218, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_7__N_1112[4], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_7__N_1112[5], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_219, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_7__N_1112[6], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr_7__N_1112[7], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pre_trig_cntr[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_220, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[1], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm[1], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm_15__N_1054[2], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/rd_dout_tm[2], Q1
+OUTPUT = SLICE_221, SLICE
+OUTPORT = n8787, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/sample_en_d, Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_226, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n55, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n54, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_227, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n53, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n52, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_228, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n51, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n50, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_229, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n49, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n48, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/tm_wr_addr_cntr[7], Q1
+OUTPUT = SLICE_233, SLICE
+OUTPORT = o_led_d1_N, OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[6], Q0
+OUTPUT = o_led_d3, PIO
+OUTPUT = o_led_d2, PIO
+OUTPUT = o_led_d1, PIO
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_235, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_cntr_0__N_949, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8785, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_236, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_det_cntr_0__N_967, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_det_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8456, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_243, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_stretch_N_1217, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_stretch, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/clk_N_keep_enable_102, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[0], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_250, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/reg0_read_N_892, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/reg0_read, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n5177, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/SLICE_253, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n7384, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/trig_cnt[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n7426, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/trig_cnt[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/SLICE_254, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n7370, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/trig_cnt[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n746, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_255, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr_3__N_669[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr_3__N_669[1], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_256, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr_3__N_669[2], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr_3__N_669[3], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_262, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n7093, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/state_cntr[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n8441, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_280, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/trig_start_mask_cnt_2__N_642[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/trig_start_mask_cnt[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/clk_N_keep_enable_93, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_281, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n5213, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/trig_start_mask_cnt[1], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/trig_start_mask_cnt_2__N_642[2], F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/trig_start_mask_cnt[2], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_285, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n7264, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_out[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/clk_N_keep_enable_76, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/SLICE_287, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/c, OFX0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tu_out[0], Q0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/SLICE_288, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n1550, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trigger_reg, Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/trigger_reg_N_888, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_307, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n6, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/jupdate_reclk[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n9_adj_1228, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/jupdate_reclk[3], Q1
+OUTPUT = SLICE_334, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/op_code[1], Q0
+OUTPORT = n13_adj_1288, F1
+OUTPORT = se5chub/genblk1.jtaghub_rom_1_0_f5a, OFX1
+OUTPUT = SLICE_335, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/op_code[0], Q0
+OUTPORT = n13, F1
+OUTPORT = se5chub/genblk1.jtaghub_rom_1_f5b, OFX1
+OUTPUT = SLICE_336, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/input_a_d1[0], Q0
+OUTPORT = n7698, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tu_0/input_a_d2[0], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_339, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/selected_tt_cnt_out, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr_reg[0][2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n814, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr_reg[0][3], Q1
+OUTPUT = SLICE_344, SLICE
+OUTPORT = n12, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[8], Q0
+OUTPORT = n7798, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[9], Q1
+OUTPUT = SLICE_346, SLICE
+OUTPORT = n12_adj_1289, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/compare_reg[0][0], Q0
+OUTPORT = n7804, F1
+OUTPUT = SLICE_348, SLICE
+OUTPORT = n12_adj_1291, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/mask_reg[0][0], Q0
+OUTPORT = n7812, F1
+OUTPUT = SLICE_349, SLICE
+OUTPORT = n13_adj_1275, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/op_code[2], Q0
+OUTPORT = n8404, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_350, SLICE
+OUTPORT = n7903, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n8431, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_351, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/jtck_N_223_enable_26, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n46, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_352, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/jtck_N_223_enable_53, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n8416, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_353, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n8423, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n4, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/SLICE_354, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n8428, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/reg0[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n8390, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/even_parity, Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/SLICE_355, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n8457, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr_reg[0][0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/jtck_N_223_enable_118, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/event_cntr_reg[0][1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/SLICE_358, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n2638, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/reg2[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n18, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/SLICE_359, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n30, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/reg1[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n22, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_361, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n8459, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[3], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n7732, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[4], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_362, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8422, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[5], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/clk_N_keep_enable_90, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_363, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8455, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[8], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n8783, F1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_364, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8442, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_enbl[-1], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n21, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_enbl[0], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_365, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n7884, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[1], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8434, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_din_d[2], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_369, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8448, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_ptr_out[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n7826, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_ptr_out[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_370, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n7676, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_ptr_out[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8414, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_ptr_out[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_371, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8452, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_ptr_out[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/n7664, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_ptr_out[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_372, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8454, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_ptr_out[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/clk_N_keep_enable_44, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trig_ptr_out[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_377, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8385, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/last_addr_written[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n1222, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/last_addr_written[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_378, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n8386, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/last_addr_written[4], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n1225, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/last_addr_written[5], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/SLICE_398, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/n8178, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[12], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/n32, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[13], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/SLICE_407, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jtck_N_223_enable_17, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/capture_reclk[2], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/jtck_N_223_enable_82, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/capture_reclk[3], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/SLICE_408, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/er2_tdo[0], F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[14], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/jtag_int_u/n4, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[15], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/SLICE_409, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tu_0/n8449, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[10], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/n8453, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/te_precnt_val[11], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/SLICE_411, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/n8210, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/last_addr_written[6], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n1196, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/last_addr_written[7], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/SLICE_419, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/n1258, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/last_addr_written[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/clk_N_keep_enable_74, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/last_addr_written[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/SLICE_430, SLICE
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n26, F0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/tcnt_0/reg1[0], Q0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/n17, F1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/reg1[1], Q1
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/pmi_ram_dpXO3Dbinarynonespeedasyncdisablereg112112/pmi_ram_dpXbnonesadr1121121152667e_0_0_0, EBR
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/trig_u/te_0/tt_out[0], DOB0
+OUTPUT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/pmi_ram_dpXO3Dbinarynonespeedasyncdisablereg9825698256/pmi_ram_dpXbnonesadr9825698256119b0f18_0_0_0, EBR
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[0], DOB0
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[1], DOB1
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[2], DOB2
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[3], DOB3
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[4], DOB4
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[5], DOB5
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[6], DOB6
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[7], DOB7
+OUTPORT = tutorial_led_blink_reveal_coretop_instance/core0/tm_u/trace_dout_int[8], DOB8
+

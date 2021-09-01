@@ -1,0 +1,7 @@
+RVL_ALIAS "i_clock" "i_clock"; 
+RVL_ALIAS "i_clock" "i_clock"; 
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+BLOCK JTAGPATHS ;
+FREQUENCY NET "i_clock_N" 108.660000 MHz ;
+FREQUENCY NET "jtaghub16_jtck" 69.046000 MHz ;
