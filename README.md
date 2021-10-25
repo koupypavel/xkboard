@@ -1,4 +1,4 @@
-# xkboard
+# XKboard
 
 Modular platform based on two separate PCBs. One with ARM-Cortex MCU and second with Lattice FPGA. Both board are indepent of each other and can be programmed and debugged separatly. PCB's are designed in way that allows interconnection of both pcbs and for example erase and program FLASH memory in FPGA using MCU. This work is inspired by VUT FIT's internal devolopment board for students called Minerva. Different components are used and in general both boards are siplification of one board solution like Minerva with both MCU and fpga on one PCB.
 
