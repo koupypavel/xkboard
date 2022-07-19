@@ -6,4 +6,5 @@ Another interesting aspect of this work is possibility to connect Arduino shield
 
 Both dirs xkboard_mcu and xkboard_fpga contains PCB designs in Altium Designer and some code examples based on LPCXpresso 4337 board for MCU. For Lattife FPGA there are some examples in VHDL. Just basic stuff to cover functionality of both borads.
 
-doc.pdf is technical overview of this project in czech. English doc is coming soon...
+doc.pdf is technical overview of this project in czech language. 
+English wiki - https://github.com/koupypavel/xkboard/wiki
