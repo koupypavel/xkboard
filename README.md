@@ -4,7 +4,7 @@ Modular platform based on two separate PCBs. One with ARM-Cortex MCU and second 
 
 Another interesting aspect of this work is possibility to connect Arduino shields to both boards when used separately. One of the examples shows usage of basic shield with buttons, 7-segment display.
 
-Both dirs xkboard_mcu and xkboard_fpga contains PCB designs in Altium Designer and some code examples based on LPCXpresso 4337 board for MCU. For Lattife FPGA there are some examples in VHDL. Just basic stuff to cover functionality of both borads.
+Both dirs xkboard_mcu and xkboard_fpga contains PCB designs in Altium Designer and some code examples based on LPCXpresso 4337 board for MCU. For Lattice FPGA there are some examples in VHDL. Just basic stuff to cover functionality of both borads.
 
 doc.pdf is technical overview of this project in czech language. 
 English wiki (translated parts of doc.pdf) - https://github.com/koupypavel/xkboard/wiki
